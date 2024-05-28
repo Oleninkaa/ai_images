@@ -1,8 +1,8 @@
 from imageai.Detection import ObjectDetection
 
 model_path = "./models/yolo-tiny.h5"
-input_path = "./input/test2.jpg"
-output_path = "./output/test2.jpg"
+input_path = "./input/gpt_fruit.jpg"
+output_path = "./output/gpt_fruit.jpg"
 
 detector = ObjectDetection()
 detector.setModelTypeAsTinyYOLOv3()
@@ -16,4 +16,10 @@ detection = detector.detectObjectsFromImage(
 
 for eachItem in detection:
     print(f"{eachItem['name']}:{eachItem['percentage_probability']}")
+
+
+
+
+
+
 
